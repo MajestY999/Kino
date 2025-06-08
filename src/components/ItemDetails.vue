@@ -5,9 +5,33 @@
       <div v-if="movie.image" class="detail-image-container">
         <img 
           :src="`/images/${movie.image}`" 
-          :alt="`Постер фильма ${movie.title}`"
+          :alt="`Постер фильма ${movie.title}`"     
           class="detail-image"
         >
+        <div v-if="movie.id === 1" class="detail-image-container">
+  <img src="/images/Punisher2017.png" alt="Постер фильма Каратель" class="detail-image" />
+</div>
+<div v-else-if="movie.id === 2" class="detail-image-container">
+  <img src="/images/Rocky4.png" alt="Постер фильма Рокки 4" class="detail-image" />
+</div>
+<div v-else-if="movie.id === 3" class="detail-image-container">
+  <img src="/images/Matrix.png" alt="Постер фильма Матрица" class="detail-image" />
+</div>
+<div v-else-if="movie.id === 4" class="detail-image-container">
+  <img src="/images/Interstellar.png" alt="Постер фильма Интерстеллар" class="detail-image" />
+</div>
+<div v-else-if="movie.id === 5" class="detail-image-container">
+  <img src="/images/MadMaxFuryRoad.png" alt="Постер фильма Безумный Макс: Дорога ярости" class="detail-image" />
+</div>
+<div v-else-if="movie.id === 6" class="detail-image-container">
+  <img src="/images/InglouriousBasterds.png" alt="Постер фильма Бесславные ублюдки" class="detail-image" />
+</div>
+<div v-else-if="movie.id === 7" class="detail-image-container">
+  <img src="/images/HatefulEight.png" alt="Постер фильма Омерзительная восьмёрка" class="detail-image" />
+</div>
+<div v-else-if="movie.id === 8" class="detail-image-container">
+  <img src="/images/Joker2019.png" alt="Постер фильма Джокер" class="detail-image" />
+</div>
       </div>
 
       <div class="detail-info">
